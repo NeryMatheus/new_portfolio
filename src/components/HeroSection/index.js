@@ -186,7 +186,7 @@ const SubTitle = styled.div`
         padding: 12px 0;
         font-size: 18px;
     } 
-`;*/
+`; */
 
 const Image = styled.img`
     width: 100%;
@@ -234,7 +234,7 @@ const Hero = () => {
                             </Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
-                        {/*<ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>*/}
+                        {/* <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton> */}
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">
