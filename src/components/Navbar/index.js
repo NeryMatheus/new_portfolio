@@ -178,11 +178,11 @@ const Navbar = () => {
                     <FaBars onClick={() => setOpen(!open)} />
                 </MobileIcon>
                 <NavItems>
-                    <NavLink href="#about">About</NavLink>
+                    <NavLink href="#about">Sobre</NavLink>
                     <NavLink href="#skills">Skills</NavLink>
-                    <NavLink href="#experience">Experience</NavLink>
-                    <NavLink href="#education">Education</NavLink>
-                    <NavLink href="#contact">Contact</NavLink>
+                    <NavLink href="#experience">Experiência</NavLink>
+                    <NavLink href="#education">Educação</NavLink>
+                    <NavLink href="#contact">Contato</NavLink>
                 </NavItems>
                 <ButtonContainer>
                     <GitHubButton href={Bio.github} target="_blank">GitHub</GitHubButton>

@@ -220,9 +220,9 @@ const Hero = () => {
                 </HeroBg>
                 <HeroInnerContainer >
                     <HeroLeftContainer id="Left">
-                        <Title>Hi, I am <br /> {Bio.name}</Title>
+                        <Title>Olá, Eu sou <br /> {Bio.name}</Title>
                         <TextLoop>
-                            I am a
+                            Eu sou um
                             <Span>
                                 <Typewriter
                                     options={{
