@@ -272,6 +272,43 @@ export const projects = [
     github: "https://github.com/NeryMatheus",
     webapp: "https://github.com/NeryMatheus",
   },
+  {
+    id: 10,
+    title: "Lorem Ipsun Developer",
+    date: "Jun 2023 - Jul 2023",
+    description:
+      "Lorem Ipsun Developer",
+    image:
+      "https://gluby.com.br/storage/uploads/blog/posts/20230126_07295643357.png",
+    tags: [
+      "Docker",
+      "AWS",
+      "DuckDNS",
+      "Eslint",
+      "Husky",
+      "CI/CD",
+      "React Js",
+      "MongoDb",
+      "Node Js",
+      "Express Js",
+      "Redux",
+    ],
+    category: "web app",
+    github: "https://github.com/NeryMatheus",
+  },
+  {
+    id: 11,
+    title: "Lorem Ipsun Developer",
+    date: "Apr 2023 - May 2023",
+    description:
+      "Lorem Ipsun Developer",
+    image:
+      "https://gluby.com.br/storage/uploads/blog/posts/20230126_07295643357.png",
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    category: "android app",
+    github: "https://github.com/NeryMatheus",
+    webapp: "https://github.com/NeryMatheus",
+  },
 ];
 
 export const TimeLineData = [
