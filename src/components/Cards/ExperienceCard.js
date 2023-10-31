@@ -88,7 +88,7 @@ const Role = styled.div`
     }
 `
 
-const Company = styled.div`
+const Company = styled.a`
     font-size: 14px;
     font-weight: 500;
     color: ${({ theme }) => theme.text_secondary + 99};
@@ -124,10 +124,14 @@ const Skills = styled.div`
     margin-top: 10px;
 `
 
+const Descs = styled.div`
+    width: 100%;
+    display: flex;
+`
+
 const ItemWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
 `
 
 const Skill = styled.div`
@@ -143,18 +147,19 @@ const Skill = styled.div`
 const ExperienceCard = ({ experience }) => {
   return <Card>
     <Top>
-      <Image src={experience.img} />
+      <Image src={experience.img} href={experience.linkedin} />
       <Body>
         <Role>{experience.role}</Role>
-        <Company>{experience.company}</Company>
+        <Company href={experience.linkedin} target='_blank'>{experience.company}</Company>
         <Date>{experience.date}</Date>
       </Body>
     </Top>
     <Description>
-      {
-        experience?.desc &&
-        <Span>{experience?.desc}</Span>
-      }
+        <ItemWrapper>
+            {experience?.descs?.map((desc) => (
+                <Descs>• {desc} </Descs>
+            ))}
+        </ItemWrapper>
       {experience?.skills &&
           <>
               <br />

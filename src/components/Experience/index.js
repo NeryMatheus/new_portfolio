@@ -74,8 +74,8 @@ const Experience = () => {
     return (
         <Container id='experience'>
             <Wrapper>
-                <Title>Experience</Title>
-                <Desc>Here are some of my projects</Desc>
+                <Title>Experiência</Title>
+                <Desc>Habilidades e conquistas no desenvolvimento de aplicativos e sistemas de backend.</Desc>
                 <TimeLineSection>
                     <Timeline>
                         {experiences.map((experience, index) => (
