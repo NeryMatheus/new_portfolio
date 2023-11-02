@@ -1,3 +1,4 @@
+/* SKILLS */
 import jquery from "../images/skills/frontend/jquery.png";
 import js from "../images/skills/frontend/js.png";
 import react from "../images/skills/frontend/react.png";
@@ -21,6 +22,14 @@ import postman from "../images/skills/others/postman.png";
 import mysql from "../images/skills/others/mysql.png";
 import postgresql from "../images/skills/others/postgresql.png";
 import mongodb from "../images/skills/others/mongodb.png";
+/* SKILLS */
+
+/* EXPERIENCE */
+import ttm from "../images/projects/ttm.png";
+import tsp from "../images/projects/tsp.png";
+import portfolio from "../images/projects/portfolio.png";
+import clonenubank from "../images/projects/clonenubank.png";
+/* EXPERIENCE */
 
 export const Bio = {
   name: "Matheus Nery",
@@ -222,7 +231,7 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "https://media.licdn.com/dms/image/D4D0BAQHC2IopEZQVUA/company-logo_100_100/0/1696292311308/institutoipdec_logo?e=1706745600&v=beta&t=kJMszRgYBSCX9eQ44HYZc4kh7Z03gEv6p4vCQJIsusY",
+    img: "https://media.licdn.com/dms/image/D4D0BAQFaTCekRO4ujg/company-logo_100_100/0/1698775647506/institutoipdec_logo?e=1706745600&v=beta&t=f18A-cDbI7c37YkaCsnYAG-83qnitFn4sGG2ipEspYY",
     role: "Desenvolvedor Backend | NestJs | TypeORM | PostgreSQL | Docker | Jest",
     linkedin: "https://www.linkedin.com/company/institutoipdec/mycompany/",
     company: "Instituto IPDEC",
@@ -289,78 +298,59 @@ export const education = [
 
 export const projects = [
   {
-    id: 9,
-    title: "Lorem Ipsun Developer",
-    date: "Jun 2023 - Jul 2023",
-    description:
-      "Lorem Ipsun Developer",
-    image:
-      "https://gluby.com.br/storage/uploads/blog/posts/20230126_07295643357.png",
-    tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-    ],
-    category: "web app",
-    github: "https://github.com/NeryMatheus",
-  },
-  {
     id: 0,
-    title: "Lorem Ipsun Developer",
-    date: "Apr 2023 - May 2023",
-    description:
-      "Lorem Ipsun Developer",
-    image:
-      "https://gluby.com.br/storage/uploads/blog/posts/20230126_07295643357.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-    category: "web app",
-    github: "https://github.com/NeryMatheus",
-    webapp: "https://github.com/NeryMatheus",
-  },
-  {
-    id: 10,
-    title: "Lorem Ipsun Developer",
+    title: "TTM - Top Ten Movies",
     date: "Jun 2023 - Jul 2023",
     description:
-      "Lorem Ipsun Developer",
-    image:
-      "https://gluby.com.br/storage/uploads/blog/posts/20230126_07295643357.png",
+      "Top Ten Movies é um aplicativo que permite que você veja os filmes mais bem avaliados do IMDB, além de poder ver os detalhes de cada filme, título, nota, uma breve descrição e quantidade de notas.",
+    image: ttm,
     tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
+      "React",
+      "NestJs",
+      "TypeORM",
+      "TypeScript"
     ],
     category: "web app",
     github: "https://github.com/NeryMatheus",
+    frontend: "https://github.com/NeryMatheus/top-ten-movies-front",
+    backend: "https://github.com/NeryMatheus/top-ten-movies"
   },
   {
-    id: 11,
-    title: "Lorem Ipsun Developer",
-    date: "Apr 2023 - May 2023",
+    id: 1,
+    title: "Treinando um Desenvolvimento de Site",
+    date: "Ago 2021 - Set 2021",
     description:
-      "Lorem Ipsun Developer",
-    image:
-      "https://gluby.com.br/storage/uploads/blog/posts/20230126_07295643357.png",
+      "Criação de um site profissional utilizando as linguagens HTML5, CSS3, Materialize e Javascript. Possui um design responsivo, ou seja, se ajusta tanto com smartphones e tablets quanto o próprio notebook e desktop. Foi utilizado a bliblioteca de funções javascript JQuery.",
+    image: tsp,
+    tags: ["HTML", "CSS", "JavaScript", "JQuery", "Materialize"],
+    category: "web app",
+    github: "https://github.com/NeryMatheus/HTML5-CSS3-JAVASCRIPT",
+    frontend: "https://html-5-css-3-javascript.vercel.app/"
+  },
+  {
+    id: 2,
+    title: "Portfolio antigo",
+    date: "Jan 2022 - Fev 2022",
+    description:
+      "Criação de um portfolio afim de mostrar meus projetos e habilidades. Nesse primeiro portfolio, com o intuito de aprender mais sobre a base web, foi utilizado as linguagens HTML5, CSS3, Javascript.",
+    image: portfolio,
+    tags: ["HTML", "CSS", "JavaScript"],
+    category: "web app",
+    github: "https://github.com/NeryMatheus",
+    frontend: "https://github.com/NeryMatheus/portfolio"
+  },
+  {
+    id: 3,
+    title: "Clone interface inicial do nubank",
+    date: "Jan 2023 - Jan 2023",
+    description:
+      "Criação de um clone da interface inicial do nubank, com o intuito de aprender mais sobre o desenvolvimento mobile. Foi utilizado a linguagen Kotlin.",
+    image: clonenubank,
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "android app",
     github: "https://github.com/NeryMatheus",
-    webapp: "https://github.com/NeryMatheus",
+    frontend: "https://github.com/NeryMatheus/top-ten-movies-front",
+    backend: "https://github.com/NeryMatheus/top-ten-movies"
   },
 ];
 
