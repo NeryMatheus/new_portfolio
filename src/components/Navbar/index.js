@@ -181,8 +181,8 @@ const Navbar = () => {
                     <NavLink href="#about">Sobre</NavLink>
                     <NavLink href="#skills">Skills</NavLink>
                     <NavLink href="#experience">Experiência</NavLink>
+                    <NavLink href="#projects">Projetos</NavLink>
                     <NavLink href="#education">Educação</NavLink>
-                    <NavLink href="#contact">Contato</NavLink>
                 </NavItems>
                 <ButtonContainer>
                     <GitHubButton href={Bio.github} target="_blank">GitHub</GitHubButton>
