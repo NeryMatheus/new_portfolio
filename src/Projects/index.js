@@ -92,19 +92,19 @@ export const CardContainer = styled.div`
     align-items: center;
     gap: 28px;
     flex-wrap: wrap;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 32px;
-    // grid-auto-rows: minmax(100px, auto);
-    // @media (max-width: 960px) {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
-    // @media (max-width: 640px) {
-    //     grid-template-columns: repeat(1, 1fr);
-    // }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    grid-auto-rows: minmax(100px, auto);
+    @media (max-width: 960px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 640px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `;
 
-const Projects = () => {
+const Projects = ({openModal,setOpenModal}) => {
     const [toggle, setToggle] = useState("all")
 
   return <Container id="projects">
@@ -133,12 +133,14 @@ const Projects = () => {
         </ToggleButtonGroup>
 
         <CardContainer>
-            {toggle === "all" && 
-            projects.map((project) => <ProjectCard project={project}  />)}
-            {projects
-                .filter((project) => project.category === toggle)
-                .map((project) => (
-                <ProjectCard project={project} />
+          {toggle === 'all' && projects
+            .map((project) => (
+              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+            ))}
+          {projects
+            .filter((item) => item.category === toggle)
+            .map((project) => (
+              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
         </CardContainer>
     </Wrapper>

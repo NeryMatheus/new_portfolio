@@ -24,6 +24,11 @@ import postgresql from "../images/skills/others/postgresql.png";
 import mongodb from "../images/skills/others/mongodb.png";
 /* SKILLS */
 
+/* EDUCATIONS */
+import fametro from "../images/educations/fametro.jpeg";
+import pucminas from "../images/educations/pucminas.jpeg";
+/* EDUCATIONS */
+
 /* EXPERIENCE */
 import ttm from "../images/projects/ttm.png";
 import tsp from "../images/projects/tsp.png";
@@ -278,21 +283,19 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/D4D0BAQHC2IopEZQVUA/company-logo_100_100/0/1696292311308/institutoipdec_logo?e=1706745600&v=beta&t=kJMszRgYBSCX9eQ44HYZc4kh7Z03gEv6p4vCQJIsusY",
-    school: "Lorem Ipsun Developer",
-    date: "Lorem Ipsun Developer",
-    grade: "Lorem Ipsun Developer",
-    desc: "Lorem Ipsun Developer",
-    degree: "Lorem Ipsun Developer",
+    img: fametro,
+    link: 'https://fametro.edu.br/',
+    school: "Centro Universitário FAMETRO",
+    date: "Fev 2016 - Dez 2019",
+    degree: "Sistemas de informação",
   },
   {
     id: 1,
-    img: "https://gluby.com.br/storage/uploads/blog/posts/20230126_07295643357.png",
-    school: "Lorem Ipsun Developer",
-    date: "Lorem Ipsun Developer",
-    grade: "Lorem Ipsun Developer",
-    desc: "Lorem Ipsun Developer",
-    degree: "Lorem Ipsun Developer",
+    img: pucminas,
+    link: 'https://www.pucminas.br/main/Paginas/default.aspx',
+    school: "PUC Minas",
+    date: "Mar 2023 - Atual",
+    degree: "Engenharia de Software",
   }
 ];
 
@@ -311,9 +314,9 @@ export const projects = [
       "TypeScript"
     ],
     category: "web app",
-    github: "https://github.com/NeryMatheus",
     frontend: "https://github.com/NeryMatheus/top-ten-movies-front",
-    backend: "https://github.com/NeryMatheus/top-ten-movies"
+    backend: "https://github.com/NeryMatheus/top-ten-movies",
+    webapp: 'https://ttm-frontend.vercel.app/',
   },
   {
     id: 1,
@@ -324,8 +327,9 @@ export const projects = [
     image: tsp,
     tags: ["HTML", "CSS", "JavaScript", "JQuery", "Materialize"],
     category: "web app",
-    github: "https://github.com/NeryMatheus/HTML5-CSS3-JAVASCRIPT",
-    frontend: "https://html-5-css-3-javascript.vercel.app/"
+    frontend: "https://github.com/NeryMatheus/HTML5-CSS3-JAVASCRIPT",
+    backend: null,
+    webapp: "https://html-5-css-3-javascript.vercel.app/"
   },
   {
     id: 2,
@@ -336,8 +340,9 @@ export const projects = [
     image: portfolio,
     tags: ["HTML", "CSS", "JavaScript"],
     category: "web app",
-    github: "https://github.com/NeryMatheus",
-    frontend: "https://github.com/NeryMatheus/portfolio"
+    frontend: "https://github.com/NeryMatheus/portfolio",
+    backend: null,
+    webapp: "https://portfolio-nerymatheus.vercel.app/"
   },
   {
     id: 3,
@@ -348,9 +353,9 @@ export const projects = [
     image: clonenubank,
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "android app",
-    github: "https://github.com/NeryMatheus",
-    frontend: "https://github.com/NeryMatheus/top-ten-movies-front",
-    backend: "https://github.com/NeryMatheus/top-ten-movies"
+    frontend: "https://github.com/NeryMatheus/clone-Nubank",
+    backend: null,
+    webapp: null,
   },
 ];
 

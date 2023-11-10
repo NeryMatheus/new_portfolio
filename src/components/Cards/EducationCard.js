@@ -79,7 +79,7 @@ const Body = styled.div`
 `
 
 
-const Name = styled.div`
+const Name = styled.a`
     font-size: 18px;
     font-weight: 600;
     color: ${({ theme }) => theme.text_primary + 99};
@@ -106,42 +106,19 @@ const Date = styled.div`
     }
 `
 
-const Description = styled.div`
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    margin-bottom: 10px;
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-const Grade = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-
 const EducationCard = ({ education }) => {
-  return <Card>
-    <Top>
-      <Image src={education.img} />
-      <Body>
-        <Name>{education.name}</Name>
-        <Degree>{education.degree}</Degree>
-        <Date>{education.date}</Date>
-      </Body>
-    </Top>
-    <Grade><b>Grade: </b>{education.grade}</Grade>
-    <Description>
-        <Span>{education.desc}</Span>
-    </Description>
-  </Card>
+    return (
+        <Card>
+            <Top>
+                <Image src={education.img}/>
+                <Body>
+                    <Name  href={education.link} target='_blank'>{education.school} </Name>
+                    <Degree>{education.degree}</Degree>
+                    <Date>{education.date}</Date>
+                </Body>
+            </Top>
+        </Card>
+    )
 }
 
 export default EducationCard
