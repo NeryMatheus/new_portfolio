@@ -125,10 +125,9 @@ const Contact = () => {
 
   const [open, setOpen] = React.useState(false);
   const form = useRef();
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
+    emailjs.sendForm('service_9cm6gqg', 'template_vf5od27', form.current, 'qwaQ6V8zYKSeNUjZb')
       .then(() => {
         setOpen(true);
         form.current.reset();
@@ -137,26 +136,24 @@ const Contact = () => {
       });
   }
 
-
-
   return (
     <Container>
       <Wrapper>
-        <Title>Contact</Title>
-        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
+        <Title>Contato</Title>
+        <Desc>Sinta-se à vontade para entrar em contato comigo em caso de dúvidas ou oportunidades!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactTitle>Email</ContactTitle>
+          <ContactInput placeholder="Seu Email" name="from_email" />
+          <ContactInput placeholder="Seu Nome" name="from_name" />
+          <ContactInput placeholder="Assunto" name="subject" />
+          <ContactInputMessage placeholder="Mensagem" rows="4" name="message" />
+          <ContactButton type="submit" value="Enviar" />
         </ContactForm>
         <Snackbar
           open={open}
           autoHideDuration={6000}
           onClose={()=>setOpen(false)}
-          message="Email sent successfully!"
+          message="Email enviado com sucesso!"
           severity="success"
         />
       </Wrapper>
