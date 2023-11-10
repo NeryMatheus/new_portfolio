@@ -6,7 +6,7 @@ import Hero from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import { BrowserRouter as Router } from "react-router-dom";
-import Projects from "./Projects";
+import Projects from "./components/Projects";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import { useState } from "react";
