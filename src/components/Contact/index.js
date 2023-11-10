@@ -120,6 +120,9 @@ const ContactButton = styled.input`
 `
 
 
+const serviceID = process.env.REACT_APP_SERVICE_ID;
+const templateID = process.env.REACT_APP_TEMPLATE_ID;
+const userID = process.env.REACT_APP_USER_ID;
 
 const Contact = () => {
 
@@ -127,7 +130,7 @@ const Contact = () => {
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_9cm6gqg', 'template_vf5od27', form.current, 'qwaQ6V8zYKSeNUjZb')
+    emailjs.sendForm(serviceID, templateID, form.current, userID)
       .then(() => {
         setOpen(true);
         form.current.reset();
