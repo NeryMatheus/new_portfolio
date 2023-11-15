@@ -140,7 +140,7 @@ const Contact = () => {
   }
 
   return (
-    <Container>
+    <Container id="contact">
       <Wrapper>
         <Title>Contato</Title>
         <Desc>Sinta-se à vontade para entrar em contato comigo em caso de dúvidas ou oportunidades!</Desc>

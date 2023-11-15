@@ -25,6 +25,7 @@ const Wrapper = styled.div`
     padding: 10px 0px 100px 0px;
     @media (max-width: 960px) {
         flex-direction: column;
+        padding: 10px 0px 50px 0px;
     }
 `
 
@@ -90,12 +91,8 @@ export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 28px;
+    gap: 10px;
     flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 32px;
-    grid-auto-rows: minmax(100px, auto);
     @media (max-width: 960px) {
         grid-template-columns: repeat(2, 1fr);
     }

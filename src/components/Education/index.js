@@ -74,9 +74,9 @@ function Education() {
   return (
     <Container id="education">
         <Wrapper>
-            <Title>Education</Title>
+            <Title>Educação</Title>
             <Desc>
-                My education has been a journey of self-discovery and growth. My educational details are as follows.
+                Instituições que frequento e frequentei ...
             </Desc>
             <TimeLineSection>
                 <Timeline>

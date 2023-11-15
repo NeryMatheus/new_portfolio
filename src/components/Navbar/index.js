@@ -139,7 +139,7 @@ export const MobileMenu = styled.div`
     z-index: ${({ open }) => open ? "1" : "-1"};
 `;
 
-export const MobileMenuLinks = styled(LinkR)`
+export const MobileMenuLinks = styled.a`
     color: ${({ theme }) => theme.text_primary};
     font-weight: 500;
     cursor: pointer;
@@ -183,6 +183,7 @@ const Navbar = () => {
                     <NavLink href="#experience">Experiência</NavLink>
                     <NavLink href="#projects">Projetos</NavLink>
                     <NavLink href="#education">Educação</NavLink>
+                    <NavLink href="#contact">Contato</NavLink>
                 </NavItems>
                 <ButtonContainer>
                     <GitHubButton href={Bio.github} target="_blank">GitHub</GitHubButton>
@@ -191,11 +192,12 @@ const Navbar = () => {
             {
                 open && (
                     <MobileMenu open={open}>
-                        <MobileMenuLinks href="#about" onClick={() => setOpen(!open)}>About</MobileMenuLinks>
+                        <MobileMenuLinks href="#about" onClick={() => setOpen(!open)}>Sobre</MobileMenuLinks>
                         <MobileMenuLinks href="#skills" onClick={() => setOpen(!open)}>Skills</MobileMenuLinks>
-                        <MobileMenuLinks href="#experience" onClick={() => setOpen(!open)}>Experience</MobileMenuLinks>
-                        <MobileMenuLinks href="#education" onClick={() => setOpen(!open)}>Education</MobileMenuLinks>
-                        <MobileMenuLinks href="#contact" onClick={() => setOpen(!open)}>Contact</MobileMenuLinks>           
+                        <MobileMenuLinks href="#experience" onClick={() => setOpen(!open)}>Experiência</MobileMenuLinks>
+                        <MobileMenuLinks href="#projects" onClick={() => setOpen(!open)}>Projetos</MobileMenuLinks>
+                        <MobileMenuLinks href="#education" onClick={() => setOpen(!open)}>Educação</MobileMenuLinks>
+                        <MobileMenuLinks href="#contact" onClick={() => setOpen(!open)}>Contato</MobileMenuLinks>           
                         <GitHubButton 
                             style={{
                                 padding: '10px 16px',
