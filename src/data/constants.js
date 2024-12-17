@@ -2,7 +2,7 @@
 import jquery from "../images/skills/frontend/jquery.png";
 import js from "../images/skills/frontend/js.png";
 import react from "../images/skills/frontend/react.png";
-import angular from "../images/skills/frontend/angular.png";
+// import angular from "../images/skills/frontend/angular.png";
 import html from "../images/skills/frontend/html.png";
 import css from "../images/skills/frontend/css.png";
 import bootstrap from "../images/skills/frontend/bootstrap.png";
@@ -22,6 +22,8 @@ import postman from "../images/skills/others/postman.png";
 import mysql from "../images/skills/others/mysql.png";
 import postgresql from "../images/skills/others/postgresql.png";
 import mongodb from "../images/skills/others/mongodb.png";
+import flask from "../images/skills/backend/flask.png";
+import cleancode from "../images/skills/others/cleancode.png";
 /* SKILLS */
 
 /* EDUCATIONS */
@@ -34,6 +36,8 @@ import ttm from "../images/projects/ttm.png";
 import tsp from "../images/projects/tsp.png";
 import portfolio from "../images/projects/portfolio.png";
 import clonenubank from "../images/projects/clonenubank.png";
+import ipdec from "../images/skills/others/ipdec.jpeg";
+import icts from "../images/skills/others/icts.jpeg";
 /* EXPERIENCE */
 
 export const Bio = {
@@ -43,7 +47,7 @@ export const Bio = {
     "Programador",
   ],
   description:
-    "Olá! Sou um desenvolvedor backend apaixonado por transformar ideias em realidade através de código. Com 2 anos de experiência na criação de sistemas robustos e escaláveis, meu foco está na construção do “motor” que impulsiona as aplicações, garantindo que elas sejam executadas de forma eficiente e confiável.",
+    "Olá! Sou um desenvolvedor backend apaixonado por transformar ideias em realidade através de código. Com 3 anos de experiência na criação de sistemas robustos e escaláveis, meu foco está na construção do “motor” que impulsiona as aplicações, garantindo que elas sejam executadas de forma eficiente e confiável.",
   github: "https://github.com/NeryMatheus",
   resume:"",
   linkedin: "https://www.linkedin.com/in/nerymatheusferreira/",
@@ -72,6 +76,10 @@ export const skills = [
         image: nestjs,
       },
       {
+        name: "Flask",
+        image: flask,
+      },
+      {
         name: "Spring Boot",
         image: spring,
       },
@@ -90,7 +98,15 @@ export const skills = [
       {
         name: "MongoDB",
         image: mongodb,
-      }
+      },
+      {
+        name: "Docker",
+        image: docker,
+      },
+      {
+        name: "Postman",
+        image: postman,
+      },
     ],
   },
   {
@@ -124,11 +140,11 @@ export const skills = [
         image:
           react,
       },
-      {
-        name: "Angular",
-        image:
-          angular,
-      }
+      // {
+      //   name: "Angular",
+      //   image:
+      //     angular,
+      // }
     ],
   },
   // {
@@ -175,18 +191,15 @@ export const skills = [
         name: "Azure",
         image: azure,
       },
-      {
-        name: "Docker",
-        image: docker,
-      },
+      
       {
         name: "VS Code",
         image: vscode,
       },
       {
-        name: "Postman",
-        image: postman,
-      },
+        name: "Clean Code",
+        image: cleancode,
+      }
     ],
   },
 ];
@@ -194,7 +207,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/D4D0BAQFaTCekRO4ujg/company-logo_100_100/0/1698775647506/institutoipdec_logo?e=1706745600&v=beta&t=f18A-cDbI7c37YkaCsnYAG-83qnitFn4sGG2ipEspYY",
+    img: ipdec,
     role: "Desenvolvedor Backend | NestJs | TypeORM | PostgreSQL | Docker | Jest",
     linkedin: "https://www.linkedin.com/company/institutoipdec/mycompany/",
     company: "Instituto IPDEC",
@@ -238,7 +251,7 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "https://media.licdn.com/dms/image/C4D0BAQFy9y5gyZoDPA/company-logo_200_200/0/1679069515055/grupo_icts_logo?e=1706745600&v=beta&t=1fdaEOmfHX-nbWoFPt2bC3z6NLbBfduioYHnfybDfW4",
+    img: icts,
     role: "Analista de Desenvolvimento de Sistemas Júnior | PHP | HTML | CSS | JavaScript | JQuery | MySql",
     linkedin: "https://www.linkedin.com/company/grupo-icts/",
     company: "Grupo ICTS",
@@ -286,7 +299,7 @@ export const education = [
     img: pucminas,
     link: 'https://www.pucminas.br/main/Paginas/default.aspx',
     school: "PUC Minas",
-    date: "Mar 2023 - Atual",
+    date: "Mar 2023 - Mar 2024",
     degree: "Pós-graduação Lato Sensu - Especialização, Engenharia de Software",
   },
   {
