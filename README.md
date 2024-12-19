@@ -19,8 +19,6 @@ O site é composto por seis seções:
 
 ---
 
-<h4 align="center"><a href="https://github.com/NeryMatheus/new_portfolio">Clique para visitar o projeto no GitHub</a></h4>
-
 ### - 🐳 Crie uma imagem docker e teste localmente
 
 `docker run -p 3000:3000 new-portfolio:1.0`
