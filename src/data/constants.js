@@ -8,6 +8,7 @@ import css from "../images/skills/frontend/css.png";
 import bootstrap from "../images/skills/frontend/bootstrap.png";
 import spring from "../images/skills/backend/spring-boot.png";
 import python from "../images/skills/backend/python.png";
+import csharp from "../images/skills/others/csharpe.png";
 import php from "../images/skills/backend/php.png";
 import nodejs from "../images/skills/backend/nodejs.png";
 import nestjs from "../images/skills/backend/nestjs.png";
@@ -17,8 +18,6 @@ import github from "../images/skills/others/github.png";
 import gitlab from "../images/skills/others/gitlab.png";
 import azure from "../images/skills/others/azure.png";
 import docker from "../images/skills/others/docker.png";
-import vscode from "../images/skills/others/vscode.png";
-import postman from "../images/skills/others/postman.png";
 import mysql from "../images/skills/others/mysql.png";
 import postgresql from "../images/skills/others/postgresql.png";
 import mongodb from "../images/skills/others/mongodb.png";
@@ -67,6 +66,11 @@ export const skills = [
           python,
       },
       {
+        name: "C#",
+        image:
+          csharp,
+      },
+      {
         name: "PHP",
         image:
           php,
@@ -103,10 +107,10 @@ export const skills = [
         name: "Docker",
         image: docker,
       },
-      {
-        name: "Postman",
-        image: postman,
-      },
+      // {
+      //   name: "Postman",
+      //   image: postman,
+      // },
     ],
   },
   {
@@ -192,10 +196,10 @@ export const skills = [
         image: azure,
       },
       
-      {
-        name: "VS Code",
-        image: vscode,
-      },
+      // {
+      //   name: "VS Code",
+      //   image: vscode,
+      // },
       {
         name: "Clean Code",
         image: cleancode,
@@ -211,7 +215,7 @@ export const experiences = [
     role: "Desenvolvedor Backend | NestJs | TypeORM | PostgreSQL | Docker | Jest",
     linkedin: "https://www.linkedin.com/company/institutoipdec/mycompany/",
     company: "Instituto IPDEC",
-    date: "Fev 2023 - atual",
+    date: "Fev 2023 - Jan 2025",
     descs: [
       "Desenvolvimento de aplicativos web usando NestJS como framework do lado do servidor e TypeScript - como linguagem de programação principal",
       "Utilização do TypeORM como ORM para mapeamento objeto-relacional e gerenciamento de banco de dados, principalmente com o banco de dados PostgreSQL",
